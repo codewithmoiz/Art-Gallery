@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'victor';
+    src: url(./victor-horta/Victor\ Horta.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e7e0dc;
+    /* background-color: #fff; */
+}
+body>h1{
+    font-family: 'victor';
+    font-size: 60px;
+    color: #424242;
+}
+#main{
+    height: 80vh;
+    width: 85%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center ;
+    /* background-color: #fff; */
+}
+#main .box{
+    /* flex-grow: 1; */
+    height: 100%;
+    width: 30%;   
+    /* border: 1px solid #000; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: space-evenly;
+}
+#main .box img{
+    /* height: 55%;
+    width: 80%; */
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#main .box img:hover{
+    box-shadow: 0px 0px 10px #424242;
+}
+#main .box1 img:nth-child(1){
+    height: 55%;
+    width: 80%;
+}
+#main .box1 img:nth-child(2){
+    height: 40%;
+    width: 80%;
+}
+#main .box2 img:nth-child(1){
+    height: 40%;
+    width: 80%;
+}
+#main .box2 img:nth-child(2){
+    height: 55%;
+    width: 80%;
+}
+#main .box3 img:nth-child(1){
+    height: 55%;
+    width: 80%;
+}
+#main .box3 img:nth-child(2){
+    height: 40%;
+    width: 80%;
+}
+#main .box4 img:nth-child(1){
+    height: 40%;
+    width: 80%;
+}
+#main .box4 img:nth-child(2){
+    height: 55%;
+    width: 80%;
+}
+#main .box5 img:nth-child(1){
+    height: 55%;
+    width: 80%;
+}
+#main .box5 img:nth-child(2){
+    height: 40%;
+    width: 80%;
+}
+#view{
+    height: 90%;
+    width: 80%;
+    /* background-color: #424242; */
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    scale: 0;
+    transition: 0.4s;
+}
+#view .cross{
+    width: 100%;
+    height: 8%;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+.cross i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+#view .image-box{
+    width: 100%;
+    height: 91%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+/* @media (max-width: 550px) {
+    body>h1{
+        font-size: 40px;
+        text-align: center;
+    }
+} */
+@media (max-width: 600px) {
+    body>h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    #main{
+        flex-direction: column;
+        width: 95%;
+        height: 85vh;
+    }
+    #main .box{
+        /* background-color: cadetblue; */
+        width: 100%;
+        flex-direction: row;
+        height: 20%;
+    }
+    #main .box1{
+        /* background-color: crimson; */
+        justify-content: space-evenly;
+    }
+    #main .box1 img:nth-child(1){
+        height: 98%;
+        width: 60%;
+    }
+    #main .box1 img:nth-child(2){
+        height: 98%;
+        width: 35%;
+    }
+    #main .box2 img:nth-child(1){
+        height: 98%;
+        width: 35%;
+    }
+    #main .box2 img:nth-child(2){
+        height: 98%;
+        width: 60%;
+    }
+    #main .box3 img:nth-child(1){
+        height: 98%;
+        width: 60%;
+    }
+    #main .box3 img:nth-child(2){
+        height: 98%;
+        width: 35%;
+    }
+    #main .box4 img:nth-child(1){
+        height: 98%;
+        width: 35%;
+    }
+    #main .box4 img:nth-child(2){
+        height: 98%;
+        width: 60%;
+    }
+    #main .box5 img:nth-child(1){
+        height: 98%;
+        width: 60%;
+    }
+    #main .box5 img:nth-child(2){
+        height: 98%;
+        width: 35%;
+    }
+}
